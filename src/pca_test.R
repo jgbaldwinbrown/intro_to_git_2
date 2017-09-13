@@ -13,3 +13,6 @@ dev.off()
 names(iris)
 iris_lm <- lm(Sepal.Length~Petal.Length, data=iris)
 plot(Sepal.Length~Petal.Length,data=iris)
+
+iris_lm <- lm(Sepal.Length~Petal.Width, data=iris)
+plot(Sepal.Length~Petal.Width,data=iris)
