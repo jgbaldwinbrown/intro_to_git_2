@@ -9,3 +9,7 @@ biplot(iris_PCA)
 pdf("./results/iris_pca_biplot.pdf",width=8,height=6)
 biplot(iris_PCA)
 dev.off()
+
+names(iris)
+iris_lm <- lm(Sepal.Length~Petal.Length, data=iris)
+plot(Sepal.Length~Petal.Length,data=iris)
